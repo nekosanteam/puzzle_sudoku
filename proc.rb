@@ -6,7 +6,7 @@ end
 
 if __FILE__ == $0 then
     line = ARGF.gets()
-    exit(1) if /sat/i !== line
+    exit(1) unless /sat/i === line
     line = ARGF.gets()
     count = 0
     line.split(/\s+/).each {|n|
